@@ -3,7 +3,7 @@
 FROM ubuntu:16.04
 
 #Author of the Docker File
-# MAINTAINER Pictolearn Note: MAINTAINER has been deprecated for LABEL, 
+# MAINTAINER learn app Note: MAINTAINER has been deprecated for LABEL, 
 # LABEL is a key value pair 
 LABEL "Maintainer"="bsa"
 
