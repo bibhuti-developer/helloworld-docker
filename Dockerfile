@@ -5,7 +5,7 @@ FROM ubuntu:16.04
 #Author of the Docker File
 # MAINTAINER Pictolearn Note: MAINTAINER has been deprecated for LABEL, 
 # LABEL is a key value pair 
-LABEL "Maintainer"="Pictolearn"
+LABEL "Maintainer"="bsa"
 
 # RUN COMMAND BASICALLY runs the command in the terminal and creates an image.
 # Install all the updates for UBUNTU
@@ -40,4 +40,4 @@ RUN cd /usr/local/docker-git-hello-world && mvn assembly:assembly
 
 #THE CMD COMMAND tells docker the command to run when the container is started up from the image. In this case we are
 # executing the java program as is to print Hello World.
-CMD ["java", "-cp", "/usr/local/docker-git-hello-world/target/docker-git-hello-world-0.0.1-SNAPSHOT-jar-with-dependencies.jar", "org.pictolearn.docker.HelloWorldPing"]
+CMD ["java", "-cp", "/usr/local/docker-git-hello-world/target/docker-git-hello-world-0.0.1-SNAPSHOT-jar-with-dependencies.jar", "org.bsa.docker.HelloWorldPing"]
